@@ -1,12 +1,27 @@
 .array-container {
-    position: absolute;
     transform: rotate(90deg);
-    left: 300 px;
+    margin: 100px;
+    left: 300px;
+    padding: 0 100px;
 }
 
 .array-bar {
-    width: 4px;
+    width: 8px;
     background-color: navy;
     display: inline-block;
     margin: 0 2px;
+}
+
+li {
+    list-style-type: none;
+    margin: 10px 0
+}
+
+.parent {
+    display: flex;
+}
+
+.column {
+    margin: 0 100px;
+    padding-top: 300px;
 }
