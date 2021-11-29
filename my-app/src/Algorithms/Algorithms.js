@@ -56,3 +56,23 @@ export const bubbleSort = array => {
     }
     return animations;
 }
+
+export const insertionSort = array => {
+    const animations = [];
+    let i, key, j; 
+    for (i = 1; i < array.length-1; i++)
+    { 
+        key = array[i];
+        j = i - 1; 
+        animations.push([j, i, false]);
+        while (j >= 0 && array[j] > key)
+        { 
+            animations.push([j, j+1, true, array[j+1], array[j]]);
+            array[j + 1] = array[j]; 
+            j = j - 1; 
+        }
+        animations.push([j+1, i, true, array[j+1], key]);
+        array[j + 1] = key; 
+    } 
+    return animations;
+}
