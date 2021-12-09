@@ -148,7 +148,8 @@ export default class Sorter extends React.Component {
                         barTwoStyle.backgroundColor = "red"
                         prevStyle1.backgroundColor = "navy"
                     }
-                }, i*100);
+                }, i*100
+                );
             }
         }
     }
